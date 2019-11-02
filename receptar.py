@@ -2,6 +2,9 @@
 import os.path
 import sys
 
+print('Vitej', os.getlogin())
+
+
 def je_ingredience_v_receptu(ingredience, recept):
     with open(recept) as fp:
         if ingredience in fp.read():
